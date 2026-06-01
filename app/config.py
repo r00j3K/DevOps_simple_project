@@ -10,7 +10,7 @@ def _get_secret(secret_name: str, default: str = None) -> str:
     return os.getenv(secret_name.upper(), default)
 
 DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_NAME = os.getenv("DB_NAME", "devops_db")
-DB_USER = os.getenv("DB_USER", "postgres")
+DB_NAME = os.getenv("POSTGRES_DB", "devops_db")
+DB_USER = os.getenv("POSTGRES_USER", "postgres")
 
 DB_PASSWORD = _get_secret("db_pass", "default_db_password")
