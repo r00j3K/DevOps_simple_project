@@ -2,7 +2,7 @@ from fastapi import FastAPI, status, HTTPException
 import socket;
 import psutil
 import psycopg2;
-from config import DB_HOST, DB_NAME, DB_USER, DB_PASSWORD
+from app.config import DB_HOST, DB_NAME, DB_USER, DB_PASSWORD
 
 app = FastAPI()
 

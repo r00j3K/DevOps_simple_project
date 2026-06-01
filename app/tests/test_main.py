@@ -16,6 +16,6 @@ def test_root_endpoint():
 
     assert data["version"] == "1.0.0"
 
-    host_val = f"Hostname: {socket.gethostbyname()}"
+    host_val = f"Hostname: {socket.gethostname()}"
 
     assert data["hostname"] == host_val
